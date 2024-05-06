@@ -1,7 +1,7 @@
 {
-  "name": "typescript-npm-package-template",
+  "name": "mallam-wrapper",
   "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
+  "description": "Unofficial wrapper for Malaysia LLM API",
   "main": "./lib/index.js",
   "files": [
     "lib/**/*"
@@ -19,32 +19,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryansonshine/typescript-npm-package-template.git"
+    "url": "git+https://github.com/farhan-helmy/mallam-wrapper.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Ryan Sonshine",
-    "email": "ryansonshine@users.noreply.github.com",
-    "url": "https://github.com/ryansonshine"
+    "name": "Farhan Helmy",
+    "email": "farhanhlmy@gmail.com",
+    "url": "https://github.com/farhan-helmy"
   },
   "engines": {
     "node": ">=12.0"
   },
   "keywords": [
-    "boilerplate",
-    "template",
-    "typescript",
-    "vscode",
-    "jest",
-    "husky",
-    "commitizen",
-    "semantic-release",
-    "codecov"
+    "mallam",
+    "Malaysia",
+    "LLM",
+    "Malaysia LLM"
   ],
   "bugs": {
-    "url": "https://github.com/ryansonshine/typescript-npm-package-template/issues"
+    "url": "https://github.com/farhan-helmy/mallam-wrapper/issues"
   },
-  "homepage": "https://github.com/ryansonshine/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/farhan-helmy/mallam-wrapper",
   "devDependencies": {
     "@ryansonshine/commitizen": "^4.2.8",
     "@ryansonshine/cz-conventional-changelog": "^3.3.4",
