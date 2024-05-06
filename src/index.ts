@@ -1,23 +1,23 @@
 import { ChatCompletionResponse } from './reponse';
-export class Mallam {
-  private mallamToken: string;
-  private mallamModel: 'mallam-small' | 'mallam-tiny';
+export class MalaysiaAi {
+  private token: string;
+  private model: 'mallam-small' | 'mallam-tiny';
 
   /**
-   * Constructs a new instance of the Mallam class.
+   * Constructs a new instance of the MalaysiaAi class.
    *
-   * @param {string} mallamToken - The token used for authentication with the Mallam API.
-   * @param {'mallam-small' | 'mallam-tiny'} mallamModel - The model to use for chat completions available is `mallam-small` and `mallam-tiny`. Defaults to 'mallam-small' if not provided.
+   * @param {string} token - The token used for authentication with the Malaysia AI Nous API.
+   * @param {'mallam-small' | 'mallam-tiny'} model - The model to use for chat completions available is `mallam-small` and `mallam-tiny`. Defaults to 'mallam-small' if not provided.
    */
   constructor({
-    mallamToken,
-    mallamModel,
+    token,
+    model,
   }: {
-    mallamToken: string;
-    mallamModel: 'mallam-small' | 'mallam-tiny';
+    token: string;
+    model: 'mallam-small' | 'mallam-tiny';
   }) {
-    this.mallamToken = mallamToken;
-    this.mallamModel = mallamModel ?? 'mallam-small';
+    this.token = token;
+    this.model = model ?? 'mallam-small';
   }
 
   /**
@@ -57,10 +57,10 @@ export class Mallam {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${this.mallamToken}`,
+          Authorization: `Bearer ${this.token}`,
         },
         body: JSON.stringify({
-          model: this.mallamModel,
+          model: this.model,
           temperature: temperature ?? 0.9,
           top_p: top_p ?? 0.95,
           top_k: top_k ?? 50,
